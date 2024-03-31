@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form {
+  @apply
+  flex
+  flex-col
+  w-max
+  shadow
+  rounded
+  p-16
+  gap-4
+}
+
+.input {
+  @apply
+  border-[1px]
+  border-gray-200
+  py-2
+  px-4
+  outline-none
+  focus:border-gray-400
+  w-full
+}
+
+.btn {
+  @apply
+  bg-black
+  text-white
+  py-3
+  rounded-sm
+  disabled:opacity-10
+}
+
+.subt {
+  @apply
+  text-3xl
+  font-semibold
+}
+
+.label {
+  @apply
+  text-base
+  font-light
+  flex
+  flex-col
+  gap-2
+}
+
+.para {
+  @apply
+  text-gray-500
+}

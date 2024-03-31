@@ -1,0 +1,18 @@
+<div class="flex justify-center items-center">
+  <form class="form mt-20" [formGroup]="form">
+    <div>
+      <h2 class="subt">Login</h2>
+      <p class="para">Enter your manager or cashier credentials</p>
+    </div>
+  
+    <label>
+      <input placeholder="Username" class="input" type="text" formControlName="username">
+    </label>
+  
+    <label>
+      <input placeholder="Password" class="input" type="password" formControlName="password">
+    </label>
+  
+    <button type="submit" class="btn mt-2" [disabled]="!form.valid" (click)="onSubmit()">Sign in</button>
+  </form>
+</div>
