@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { RestService } from '../../../services/rest.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -9,6 +10,7 @@ import { RestService } from '../../../services/rest.service';
 })
 export class LoginComponent {
   private RestService = inject(RestService);
+  private router = inject(Router)
   public form: FormGroup;
 
   constructor() {
@@ -29,7 +31,8 @@ export class LoginComponent {
       localStorage.setItem('token', response.token);
 
       const meUser = await this.RestService.me();
-      console.log(meUser);
+
+      this.router.navigate([meUser.rolRolid === 1 ? '/manager' : '/cashier'])
     }
   }
 }
