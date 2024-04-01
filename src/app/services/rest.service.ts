@@ -22,4 +22,16 @@ export class RestService {
       this.http.get<any>(`${this.baseUrl}/users/me`)
     )
   }
+
+  users() {
+    return firstValueFrom(
+      this.http.get<any>(`${this.baseUrl}/users`)
+    )
+  }
+
+  cashes() {
+    return firstValueFrom(
+      this.http.get<any>(`${this.baseUrl}/cash`)
+    )
+  }
 }

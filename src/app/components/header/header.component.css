@@ -1,0 +1,6 @@
+li {
+  @apply
+  cursor-pointer
+  hover:opacity-70
+  active:opacity-50
+}

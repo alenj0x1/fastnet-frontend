@@ -29,8 +29,9 @@
   @apply
   bg-black
   text-white
-  py-3
-  rounded-sm
+  py-2
+  px-7
+  rounded
   disabled:opacity-10
 }
 
@@ -38,6 +39,13 @@
   @apply
   text-3xl
   font-semibold
+}
+
+.subt-xl {
+  @apply
+  text-5xl
+  font-semibold
+  mb-10
 }
 
 .label {
@@ -52,4 +60,27 @@
 .para {
   @apply
   text-gray-500
+}
+
+.icon {
+  @apply
+  text-5xl
+}
+
+.box {
+  @apply
+  shadow
+  p-10
+  rounded-xl
+}
+
+.card {
+  @apply
+  p-7
+  flex
+  flex-col
+  rounded-md
+  w-52
+  backdrop-blur-lg
+  bg-white/85
 }

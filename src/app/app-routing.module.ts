@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: 'manager',
-    loadChildren: () => import('./manager/manager-routing.module').then(m => m.ManagerRoutingModule),
+    loadChildren: () => import('./manager/manager.module').then(m => m.ManagerModule),
     canActivate: [authGuard]
   }
 ];
