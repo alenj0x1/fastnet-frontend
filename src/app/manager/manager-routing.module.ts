@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { CreateCashierComponent } from './pages/create-cashier/create-cashier.component';
-import { cashierSucessGuard } from '../guards/cashier-sucess.guard';
 
 const routes: Routes = [
   {
