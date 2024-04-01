@@ -1,9 +1,9 @@
 <header class="flex justify-between py-5 px-10 shadow-sm items-center">
-  <span class="text-4xl font-semibold">Fastnet</span>
+  <span class="text-4xl font-semibold cursor-pointer" [routerLink]="['/']">Fastnet</span>
 
   <nav>
     <ul class="flex gap-4">
-      <li class="btn" *ngIf="!isLogged()" [routerLink]="['/auth']">Login</li>
+      <li class="btn bg-black" *ngIf="!isLogged()" [routerLink]="['/auth']">Login</li>
       <li *ngIf="isLogged()" (click)="logout()">Logout</li>
     </ul>
   </nav>

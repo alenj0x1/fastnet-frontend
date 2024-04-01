@@ -27,7 +27,6 @@
 
 .btn {
   @apply
-  bg-black
   text-white
   py-2
   px-7
@@ -83,4 +82,21 @@
   w-52
   backdrop-blur-lg
   bg-white/85
+}
+
+.option {
+  @apply
+  px-16
+  py-16
+  bg-gray-950
+  text-white
+  font-semibold
+  rounded-md
+  w-96
+  text-center
+  text-xl
+  shadow
+  disabled:bg-gray-400/75
+  hover:bg-gray-900/95
+  active:bg-gray-900/85
 }

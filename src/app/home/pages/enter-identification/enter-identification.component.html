@@ -1,0 +1,14 @@
+<div class="flex justify-center p-10">
+  <form class="form">
+    <div>
+      <h1 class="subt">Enter your Identification</h1>
+      <p class="para">Only if you are a <strong>Fastnet</strong> customer enter your ID, if this is your first time here leave the field blank.</p>
+    </div>
+
+    <label>
+      <input class="input" type="text" placeholder="Example: 958699475" (input)="onInput($event)">
+    </label>
+
+    <button class="btn bg-yellow-300" [routerLink]="['takeAttention', identification]">Continue</button>
+  </form>
+</div>

@@ -34,4 +34,22 @@ export class RestService {
       this.http.get<any>(`${this.baseUrl}/cash`)
     )
   }
+
+  createCashier(formValue: any) {
+    return firstValueFrom(
+      this.http.post<any>(`${this.baseUrl}/users/createCashier`, formValue)
+    )
+  }
+
+  user(id: string) {
+    return firstValueFrom(
+      this.http.get<any>(`${this.baseUrl}/users/:${id}`)
+    )
+  }
+
+  getByClientIdentification(identification: string) {
+    return firstValueFrom(
+      this.http.get<any>(`${this.baseUrl}/clients/getByClientIdentification/${identification}`)
+    )
+  }
 }

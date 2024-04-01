@@ -1,0 +1,13 @@
+<div class="flex p-10 justify-center">
+  <div class="flex flex-col gap-4">
+    <div class="mb-5">
+      <h2 class="subt">Select a option</h2>
+      <p class="para">Some options are only available to <strong>Fastnet</strong> customers.</p>
+    </div>
+
+    <button class="option">Contract a new service</button>
+    <button class="option" [disabled]="isClient">Payments</button>
+    <button class="option" [disabled]="isClient">Changes in the contract</button>
+    <button class="option" [disabled]="isClient">Change of personal data</button>
+  </div>
+</div>

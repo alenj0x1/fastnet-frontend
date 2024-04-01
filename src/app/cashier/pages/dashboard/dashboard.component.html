@@ -1,0 +1,27 @@
+<div class="p-10 flex flex-col gap-10">
+  <div class="box bg-gradient-to-b from-orange-600 to-orange-400 p">
+    <h2 class="subt-xl text-white">Welcome, {{user.username}}</h2>
+
+    <div class="flex gap-3 flex-wrap">
+      <div class="bg-white card">
+        <span class="subt text-gray-800">Your cash</span>
+        <span class="subt text-gray-500">0</span>
+      </div>
+
+      <div class="bg-white card">
+        <span class="subt text-gray-800">Turns</span>
+        <span class="subt text-gray-500">0</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="box bg-gradient-to-b from-gray-100 to-gray-50">
+    <h2 class="subt-xl text-gray-800">Work area</h2>
+
+    <div class="flex flex-wrap gap-5">
+      <app-card-option optionName="create-cashier" [routerLink]="['/manager/createCashier']"></app-card-option>
+      <app-card-option optionName="assign-cash" [routerLink]="['/manager/assignCash']"></app-card-option>
+      <app-card-option optionName="view-cashers" [routerLink]="['/manager/viewCashers']"></app-card-option>
+    </div>
+  </div>
+</div>

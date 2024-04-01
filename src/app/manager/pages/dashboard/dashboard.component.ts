@@ -25,6 +25,4 @@ export class DashboardComponent implements OnInit{
   cashesCount() {
     return this.cashes.length
   }
-
-  
 }

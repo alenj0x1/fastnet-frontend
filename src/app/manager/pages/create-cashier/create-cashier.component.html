@@ -1,0 +1,20 @@
+<div class="flex p-10 justify-center">
+  <form class="form mt-20" [formGroup]="form">
+    <div>
+      <h2 class="subt">Create a cashier</h2>
+      <p class="para">Enter a username and email.</p>
+    </div>
+  
+    <label>
+      <input placeholder="Username" class="input" type="text" formControlName="username">
+    </label>
+  
+    <label>
+      <input placeholder="Email" class="input" type="text" formControlName="email">
+    </label>
+
+    <p class="para w-96 text-sm">The default password is <strong>pass + user name</strong>. With these credentials the cashier can log in and then change the password.</p>
+  
+    <button type="submit" class="btn mt-2 bg-green-700" [disabled]="!form.valid" (click)="onSubmit()">Save</button>
+  </form>
+</div>
